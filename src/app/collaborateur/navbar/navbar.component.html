@@ -1,0 +1,84 @@
+<nav 
+    class="navbar navbar-expand-lg navbar-mainbg " 
+    style="padding-bottom: 0px;">
+    <img 
+    class="navbar-brand navbar-logo" 
+    src="/assets/navbarimage/logo.png" 
+    alt="" 
+    >
+     <button (click)="logout()" class="logout">
+        <i class="fas fa-sign-out-alt fa-3x"></i>
+     </button>
+    <button 
+    class="navbar-toggler" 
+    type="button" 
+    data-toggle="collapse" 
+    data-target="#navbarSupportedContent" 
+    aria-controls="navbarSupportedContent" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation">
+    <i 
+    class="fas fa-bars text-white">
+    </i>
+    </button>
+    <div 
+    class="collapse navbar-collapse" 
+    id="navbarSupportedContent">
+
+      <ul 
+        class="navbar-nav ml-auto">
+        <div 
+                class="hori-selector ">
+            <div 
+                class="left">
+            </div>
+            <div 
+            class="right">
+            </div>
+        </div>
+
+            <li 
+               class="nav-item ">
+                <a 
+                   class="nav-link" 
+                   routerLink="/collaborateur/demande">
+                   <i class="fas fa-tasks"></i>Mes demandes
+                </a>
+            </li>
+            <li 
+                class="nav-item active">
+                <a 
+                class="nav-link" 
+                routerLink="/collaborateur/menu">
+                <i class="fas fa-utensils"></i>Menu
+                </a>
+            </li>
+            <li 
+                class="nav-item ">
+                <a 
+                class="nav-link" 
+                routerLink="/collaborateur/menujours">
+                <i class="fas fa-utensils"></i>Menu du jour
+                </a>
+            </li>
+            <li 
+                class="nav-item ">
+                <a 
+                class="nav-link" 
+                routerLink="/collaborateur/favoris">
+                <i class="fas fa-star"></i>
+                Favoris
+                </a>
+            </li>
+            <li 
+            class="nav-item ">
+                <a  (click)="openDialog()"
+                class="nav-link" 
+                >
+                <i class="fas fa-paper-plane"></i>Réclamation 
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+

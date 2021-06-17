@@ -1,0 +1,21 @@
+
+
+
+
+.bo{
+    border-left: 2px solid #FFA12C;
+    border-right: 2px solid #FFA12C;
+    border-bottom: 2px solid #FFA12C;
+}
+.bg{
+    background-color: #FFA12C;
+    color : #fff; 
+}
+.bg:hover{
+    background-color: #cf8223;
+
+}
+i{
+   color:  #FFA12C ;
+}
+

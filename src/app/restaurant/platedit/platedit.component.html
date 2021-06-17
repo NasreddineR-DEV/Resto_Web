@@ -1,0 +1,109 @@
+<div class="wrapper " >
+    <div class="main-panel">
+<div class="content">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-user">
+          <div class="image">
+            <img src="/assets/dashboard/img/Black.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="author">
+              <a href="#">
+                <img class="avatar border-gray" src={{retrievedImage2}}{{plat.url}} alt="...">
+                <h5 class="title">{{plat.Nom_Plat}}</h5>
+              </a>
+              <p class="description">
+                  {{plat.Prix}} Dhs
+              </p>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card card-user">
+            <div class="card-header">
+              <h5 class="card-title">Modifier un plat</h5>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="row">
+                  <div class="col-md-5 pr-1">
+                    <div class="form-group">
+                      <label>Nom du plat</label>
+                      <input type="text"  id="nom" name="nom" class="form-control" [(ngModel)]="plat.Nom_Plat" >
+                    </div>
+                  </div>
+                  <div class="col-md-3 px-1">
+                    <div class="form-group">
+                      <label>Prix</label>
+                      <input type="number" id="prix" name="prix" class="form-control" [(ngModel)]="plat.Prix">
+                    </div>
+                  </div>
+                  <div class="col-md-4 pl-1">
+                    <div class="form-group" *ngIf="plat.Id_Menu == 15">
+                      <label for="exampleInputEmail1">Menu du Jour</label>
+                      <mat-slide-toggle (change)="onToggle($event)" checked class="form-control">Menu du Jour</mat-slide-toggle>
+                  </div>
+                  <div class="form-group" *ngIf="plat.Id_Menu != 15">
+                    <label for="exampleInputEmail1">Menu du Jour</label>
+                    <mat-slide-toggle (change)="onToggle($event)" class="form-control">Menu du Jour</mat-slide-toggle>
+                </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 pr-1">
+                    <div class="form-group">
+                      <label *ngIf="plat.Id_Menu != 15">Menu</label>
+
+                      <mat-select *ngIf="plat.Id_Menu != 15" [(ngModel)]="plat.Id_Menu" class="form-control" name="id_menu" id="id_menu" >
+                          <mat-option [value]="1">Tajine</mat-option>
+                          <mat-option [value]="2">Poulet</mat-option>
+                          <mat-option [value]="3">Pizzas</mat-option>
+                          <mat-option [value]="4">Plats</mat-option>
+                          <mat-option [value]="5">Sushis</mat-option>
+                          <mat-option [value]="6">Fried Treats</mat-option>
+                          <mat-option [value]="7">Entrées</mat-option>
+                          <mat-option [value]="8">Soupes</mat-option>
+                          <mat-option [value]="9">Woks</mat-option>
+                          <mat-option [value]="10">Pâtes</mat-option>
+                          <mat-option [value]="11">Tacos</mat-option>
+                          <mat-option [value]="12">Desserts</mat-option>
+                          <mat-option [value]="13">Boissons</mat-option>
+                          <mat-option [value]="14">Jus frais</mat-option>
+                      </mat-select>
+                      
+
+                  </div>
+                  </div>
+                  <div class="col-md-6 pl-1">
+                    <div class="form-group">
+                      <label>image</label>
+
+
+                      <input (change)="onFileChanged($event)" class="form-control" #fileInput type="file" style="display: none"/>
+                      <button (click)="onClickFileInputButton()" mat-raised-button color="primary" class="form-control" >
+                        <mat-icon>attach_file</mat-icon>
+                        Plat image
+                      </button>
+
+                  </div>
+                  </div>
+                </div>
+             
+                <div class="row" mat-dialog-actions>
+                  <div class="update ml-auto mr-auto">
+                    <button (click)="updateplat()" class="btn btn-warning btn-round">Modifier</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+

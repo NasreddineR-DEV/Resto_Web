@@ -1,0 +1,38 @@
+<div class="sidebar" data-color="white" data-active-color="danger">
+    <div class="logo">
+      <a href="https://www.creative-tim.com" class="simple-text logo-mini">
+        <div class="logo-image-small">
+          <img src="/assets/dashboard/img/logo.png">
+        </div>
+        <!-- <p>CT</p> -->
+      </a>
+      <a href="https://www.creative-tim.com" class="simple-text logo-normal">
+       ONCF RESTAURANT
+        <!-- <div class="logo-image-big">
+          <img src="../assets/img/logo-big.png">
+        </div> -->
+      </a>
+    </div>
+    <div class="sidebar-wrapper">
+      <ul class="nav">
+        <li [routerLinkActive]="['active']">
+          <a class="nav-link" routerLink="/restaurant/dashboard">
+            <i class="nc-icon nc-bank"></i>
+            <p>Tableau de bord</p>
+          </a>
+        </li>
+        <li [routerLinkActive]="['active']">
+          <a class="nav-link" routerLink="/restaurant/demande">
+            <i class="nc-icon nc-bullet-list-67"></i>
+            <p>Demandes</p>
+          </a>
+        </li>
+        <li [routerLinkActive]="['active']">
+          <a  class="nav-link" routerLink="/restaurant/plat">
+            <i class="flaticon-food-and-restaurant-2 icon"></i>
+            <p>Plats</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>

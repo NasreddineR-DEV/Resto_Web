@@ -1,0 +1,101 @@
+
+<nav 
+      class="slidemenu shadow p-0 mb-2 bg-white rounded fixed-top"  
+      [ngClass] = "{'fixed-top': top}"
+      >
+
+    <!-- Item 1 -->
+    <input onclick="location.href='/collaborateur/menu#tajine';" (change)="activetop()" type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/>
+    <label for="slide-item-1"><span class="flaticon-food-1 align-middle icon"></span><span>Tajine</span></label>
+    
+    <!-- Item 2 -->
+    <input onclick="location.href='/collaborateur/menu#poulet';" (change)="activetop()" type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
+    <label for="slide-item-2"><span class="flaticon-food-and-restaurant-7 icon"></span><span> Poulet </span></label>
+    
+    <!-- Item 3 -->
+    <input onclick="location.href='/collaborateur/menu#pizzas';" (change)="activetop()" type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
+    <label for="slide-item-3"><span class="flaticon-salami icon"></span><span>Pizzas</span></label>
+    
+    <!-- Item 4 -->
+    <input (change)="activetop()" onclick="location.href='/collaborateur/menu#plats';"  type="radio" name="slideItem" id="slide-item-4" class="slide-toggle"/>
+    <label for="slide-item-4"><span class="flaticon-food-and-restaurant-2 icon"></span><span>Plats</span></label>
+    
+      <!-- Item 5 -->
+  
+    <input (change)="activetop()" onclick="location.href='/collaborateur/menu#sushis';" type="radio" name="slideItem" id="slide-item-5" class="slide-toggle"/>
+    <label for="slide-item-5"><span class="flaticon-roll-fish  icon"></span><span>Sushis</span></label>
+    
+    <!-- Item 6 -->
+  
+    <input (change)="activetop()" onclick="location.href='/collaborateur/menu#fried';" type="radio" name="slideItem" id="slide-item-6" class="slide-toggle"/>
+    <label for="slide-item-6"><span class="flaticon-tools-and-utensils icon"></span><span>Fried Treats</span></label>
+      
+      <!-- Item 7 -->
+  
+    <input (change)="activetop()" onclick="location.href='/collaborateur/menu#entrees';" type="radio" name="slideItem" id="slide-item-7" class="slide-toggle"/>
+    <label for="slide-item-7"><span class="flaticon-food-and-restaurant-1 icon"></span><span>Entrées</span></label>
+
+     <!-- Item 8 -->
+  
+    <input (change)="activetop()" onclick="location.href='/collaborateur/menu#soupes';" type="radio" name="slideItem" id="slide-item-8" class="slide-toggle"/>
+    <label for="slide-item-8"><span class="flaticon-food-and-restaurant icon"></span><span>Soupes</span></label>
+
+      <!-- Item 9 -->
+  
+     <input (change)="activetop()" onclick="location.href='/collaborateur/menu#woks';" type="radio" name="slideItem" id="slide-item-9" class="slide-toggle"/>
+     <label for="slide-item-9"><span class="flaticon-food-and-restaurant-3 icon"></span><span>Woks</span></label>
+
+    <!-- Item 10 -->
+  
+    <input (change)="activetop()" onclick="location.href='/collaborateur/menu#pates';" type="radio" name="slideItem" id="slide-item-10" class="slide-toggle"/>
+    <label for="slide-item-10"><span class="flaticon-food-and-restaurant-4 icon"></span><span>Pâtes</span></label>
+
+     <!-- Item 11 -->
+  
+     <input (change)="activetop()" onclick="location.href='/collaborateur/menu#tacos';" type="radio" name="slideItem" id="slide-item-11" class="slide-toggle"/>
+     <label for="slide-item-11"><span class="flaticon-food-and-restaurant-6 icon"></span><span>Tacos</span></label>
+     
+    <!-- Item 12 -->
+  
+    <input (change)="activetop()" onclick="location.href='/collaborateur/menu#desserts';" type="radio" name="slideItem" id="slide-item-12" class="slide-toggle"/>
+    <label for="slide-item-12"><span class="flaticon-food-and-restaurant-5 icon"></span><span>Desserts</span></label>
+
+    <!-- Item 13 -->
+  
+     <input (change)="activetop()" onclick="location.href='/collaborateur/menu#boissons';" type="radio" name="slideItem" id="slide-item-13" class="slide-toggle"/>
+     <label for="slide-item-13"><span class="flaticon-entertainment icon"></span><span>Boissons</span></label>
+
+    <!-- Item 14 -->
+  
+    <input (change)="activetop()" onclick="location.href='/collaborateur/menu#jus';" type="radio" name="slideItem" id="slide-item-14" class="slide-toggle"/>
+    <label for="slide-item-14"><span class="flaticon-fruit icon"></span><span>Jus Frais</span></label>
+    
+    <div class="clear"></div>
+
+   
+
+    
+    <!-- Bar -->
+    
+  </nav>
+
+  <button (click)="topFunction()" id="myBtn" title="Aller en haut"><i class="fas fa-sort-up"></i></button>
+
+
+  <!--Scroll to top-->
+  
+  <tajine id="tajine"></tajine>
+  <poulet id="poulet"></poulet>
+  <pizzas id="pizzas"></pizzas>
+  <plats id="plats"></plats>
+  <sushis id="sushis"></sushis>
+  <fried id="fried"></fried>
+  <entrees id="entrees"></entrees>
+  <soupes id="soupes"></soupes>
+  <woks id="woks"></woks>
+  <pates id="pates"></pates>
+  <tacos id="tacos"></tacos>
+  <desserts id="desserts"></desserts>
+  <boissons id="boissons"></boissons>
+  <jusfrais id="jus"></jusfrais>
+
